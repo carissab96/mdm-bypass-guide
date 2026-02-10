@@ -3,7 +3,6 @@
 
 # TESTED-DEVICES.md
 
-```markdown
 # Tested Devices
 
 This document tracks confirmed successful (and unsuccessful) attempts at MDM bypass using this guide.

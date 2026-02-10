@@ -3,9 +3,6 @@
 
 # DISCLAIMER.md
 
-```markdown
-# Disclaimer
-
 ## What This Is
 
 This repository contains **documentation only**. It describes a process for restoring firmware and installing Linux on Apple Silicon MacBooks that are enrolled in Mobile Device Management (MDM) systems.

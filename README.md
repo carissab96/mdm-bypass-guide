@@ -308,7 +308,7 @@ sudo reboot now
 ```
 
 ### Why this matters:
-The Secure Enclave is Apple's hardware security module. It controls encryption keys, biometric data, and - crucially for us - determines who is a "legitimate" owner of the device. Without a secure token, you can't do things like enable FileVault, approve kernel extensions, or - most importantly for our purposes - tell MDM enrollment to fuck off.
+The Secure Enclave is Apple's hardware security module. It controls encryption keys, biometric data, and - crucially for us - determines who is a "legitimate" owner of the device. Without a secure token, you can't do things like enable FileVault, approve kernel extensions, or - most importantly for our purposes - tell MDM enrollment to fuck off and then install an alternative OS.
 
 This command updates the Preboot volume with the current user credentials, granting secure tokens to both admin accounts - the dscl-created ghost account and your new GUI-created account. You are now recognized as a real owner. The Mac is yours.
 
@@ -323,17 +323,15 @@ Log into your GUI-created admin account, connect to the internet, open Terminal 
 ```bash
 curl https://alx.sh | sh
 ```
-Follow the on-screen prompts. Asahi will:
+Follow the on-screen prompts. 
 
-Resize your macOS partition
-Create a new partition for Linux
-Download and install Asahi Linux (I recommend Fedora Asahi Remix with KDE Plasma)
-Configure the bootloader
-During this process - not before - the MDM enrollment prompt will appear. And this time, there will be a button that says "Not Now".
+Asahi will:
 
-Click it.
-
-Click it with prejudice.
+- Resize your macOS partition (I recommend min to keep the macOS partition as small as possible)
+- Create a new partition for Linux (I recommend Max to give the new OS all available space)
+- Download and install Asahi Linux (I recommend Fedora Asahi Remix with KDE Plasma)
+- Configure the bootloader
+- During the installation process the MDM enrollment prompt may appear. If it does, there should be an option to click "Not Now". Enrollment is no longer a requirement.
 
 The installation process is remarkably straightforward. The Asahi team has done incredible work making this accessible.
 
@@ -345,25 +343,27 @@ sudo reboot now
 ```
 You'll see a boot picker. Select your new Linux installation.
 
-Welcome to your liberated Mac.
+**Welcome to your liberated Mac.**
 
 ## The Aftermath
 You now have a fully functional MacBook running Linux. The MDM enrollment is still technically "there" - if you ever booted back into macOS and connected to the internet, it would try again. But you're not going to do that. That tiny macOS partition exists only as a vestigial organ, a reminder of what you overcame.
 
 ### What works:
-Everything that Asahi supports: display, keyboard, trackpad, WiFi, Bluetooth, audio, webcam, USB-C, battery management
-It's fast. Smooth. Responsive. Zero latency.
-It's yours.
-What doesn't work (yet):
-Neural Engine - Apple's ML acceleration hardware remains locked behind proprietary drivers
-Some GPU features are still being reverse-engineered
+- Everything that Asahi supports: display, keyboard, trackpad, WiFi, Bluetooth, audio, webcam, USB-C, battery management
+- It's fast. Smooth. Responsive. Zero latency.
+- It's yours.
+
+### What doesn't work (yet):
+- Neural Engine - Apple's ML acceleration hardware remains locked behind proprietary drivers
+- Some GPU features are still being reverse-engineered
+
 The Asahi and Fedora teams are actively working on these. Check asahilinux.org for updates.
 
 ## Resources
-ipsw.me - Firmware downloads and device identification
-libimobiledevice project - idevicerestore and dependencies
-Asahi Linux - The incredible team reverse-engineering Apple Silicon
-Fedora Asahi Remix - The Linux distribution I recommend
+- ipsw.me - Firmware downloads and device identification
+- libimobiledevice project - idevicerestore and dependencies
+- Asahi Linux - The incredible team reverse-engineering Apple Silicon
+- Fedora Asahi Remix - The Linux distribution I recommend
 
 ## Contributing
 Tried this guide? Please report your results in TESTED-DEVICES.md or open an issue.
