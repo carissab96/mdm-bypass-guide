@@ -122,7 +122,7 @@ sudo systemctl enable usbmuxd
 
 Once everything is compiled and usbmuxd is confirmed working, you're ready for the fun part.
 
-##Step 3: Enter DFU Mode (The Finger Dance)
+## Step 3: Enter DFU Mode (The Finger Dance)
 
 DFU (Device Firmware Update) mode is a low-level recovery state that bypasses the normal boot process. Apple doesn't want you here. That's how you know you're on the right track.
 
