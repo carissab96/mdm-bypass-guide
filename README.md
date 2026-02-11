@@ -36,7 +36,7 @@ If you can follow instructions, I will walk you through every step of bypassing 
 
 - The MDM-locked Mac
 - A Linux computer
-- A USB-C data cable (not a charge cable)
+- A USB-C to USB-C data cable (not a charge cable)
 - ~40GB free space on an internal drive
 - Patience
 
@@ -127,7 +127,7 @@ Once everything is compiled and usbmuxd is confirmed working, you're ready for t
 DFU (Device Firmware Update) mode is a low-level recovery state that bypasses the normal boot process. Apple doesn't want you here. That's why it's so hard to figure out how to unlock the door...turns out, there are two keys for this one. 
 
 Connect your machines:
-Plug your USB-C data cable (not a charge cable, this will not work with a charge cable) into your Linux machine and your Mac. The Mac can be on or off for this part - we'll get to that.
+Plug your USB-C data cable (not a charge cable, this will not work with a charge cable) into your Linux machine and then plug the other end into the USB-C thunderbolt port on your Mac, for my M2 MacBook Air that's the port on the left side that is furthest away from me (2nd port). The Mac can be on or off for this part depending on which method you choose- we'll get to that.
 
 Open a terminal on your Linux machine and run:
 
