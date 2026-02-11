@@ -390,6 +390,16 @@ Found a problem or edge case? Check TROUBLESHOOTING.md or submit an issue.
 Took it one step further and actually removed the profile? Submit an issue. 
 
 ## License
-This documentation is released under CC BY-NC 4.0. Share it. Adapt it. Just give credit and keep it open. The information contained in this guide may not be reproduced for commercial purposes.  
+This documentation is released under CC BY-NC 4.0.
+
+You are free to:
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material
+
+Under the following terms:
+- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+- **NonCommercial** — You may not use the material for commercial purposes.
+
+For commercial licensing inquiries, contact carissa@hawkington.tech
 
 Carissa Bays | Hawkington Technologies | February 2026
