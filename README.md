@@ -124,7 +124,7 @@ Once everything is compiled and usbmuxd is confirmed working, you're ready for t
 
 ## Step 3: Enter DFU Mode (The Finger Dance)
 
-DFU (Device Firmware Update) mode is a low-level recovery state that bypasses the normal boot process. Apple doesn't want you here. That's how you know you're on the right track.
+DFU (Device Firmware Update) mode is a low-level recovery state that bypasses the normal boot process. Apple doesn't want you here. That's why it's so hard to figure out how to unlock the door...turns out, there are two keys for this one. 
 
 Connect your machines:
 Plug your USB-C data cable (not a charge cable, this will not work with a charge cable) into your Linux machine and your Mac. The Mac can be on or off for this part - we'll get to that.
